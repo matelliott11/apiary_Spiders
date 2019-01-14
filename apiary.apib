@@ -19,24 +19,32 @@ Access to spiders recources
     + Header
 
             Authorization: Basic dXNlcjpwYXNzd29yZA==
+            x-api-version: 1.0
         
 + Response 200 (application/json)
 
-        {
-            "page" :
+    + Header
+    
+            ETag: "euyfewuyfvew76f7"
+            cache-conrol: max-age=600
+            
+    + Body
+
             {
-                "number" : 1,
-                "size" :10,
-                "totalPages" :20
-            },
-            "spiders" :
-            [
+                "page" :
                 {
-                    "sightedAt" : "2014-08-29T07:00",
-                    "imageurl" : "uid-19247681/201408/14562881209_046a7f4d3d_z.jpg",
-                    "description" : "Spider I saw on the train",
-                    "Tags" : [
-                        "stripy"
-                    ]
-                }
-            ]
+                    "number" : 1,
+                    "size" :10,
+                    "totalPages" :20
+                },
+                "spiders" :
+                [
+                    {
+                        "sightedAt" : "2014-08-29T07:00",
+                        "imageurl" : "uid-19247681/201408/14562881209_046a7f4d3d_z.jpg",
+                        "description" : "Spider I saw on the train",
+                        "Tags" : [
+                            "stripy"
+                        ]
+                    }
+                ]
