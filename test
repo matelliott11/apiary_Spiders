@@ -1,0 +1,6 @@
+echo "# apiary_Spiders" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/matelliott11/apiary_Spiders.git
+git push -u origin master
